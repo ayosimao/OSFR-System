@@ -9,7 +9,7 @@ Simão Ferro Rodrigues
 
 ## Funcionalidades
 
-- Regiso de clientes
+- Registo de clientes
 - Gestão de ordens de serviço
 - Relatórios gerenciais
 - Controlo de utilizadores com perfis diferentes
@@ -68,9 +68,24 @@ CREATE TABLE tbos (
 
 ## Tecnologias Utilizadas
 
+- Sistema de Login funcional com atribuição de cargo
+- Criação de banco de dados e tabelas no MySQL
+- CRUD (Create Read Update e Delete)
+- IDE Netbeans
 - Java SE
-- Banco de dados MySQL
 - JDBC (Java Database Connectivity)
+- Validação de dados
+- Uso do framework Jaspersoft para gerar relatórios
+
+### Ferramentas
+[openJDK 8 (LTS)](https://adoptopenjdk.net/)
+
+[Apache NetBeans IDE 24](https://filehippo.com/download_netbeans/8.2/)
+
+[Jaspersoft Studio 7.0.1]([https://community.jaspersoft.com/download-jaspersoft/download-jaspersoft/])
+
+[Inno Setup](https://jrsoftware.org/isinfo.php)
+
 
 ## Contribuição
 
