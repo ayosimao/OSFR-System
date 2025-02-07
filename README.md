@@ -23,44 +23,8 @@ Simão Ferro Rodrigues
 
 1. **Configurar Banco de Dados:**
    - Iniciar os serviços **Apache** e **MySQL** (caso esteja a utilizar o XAMPP).
-   - Aceder ao **phpMyAdmin** e crie a base de dados **db_osfr**.
-   - Executar o seguinte script SQL:
-
-```sql
-CREATE TABLE tbusuarios (
-  iduser INT PRIMARY KEY,
-  usuario VARCHAR(15) NOT NULL,
-  fone VARCHAR(15),
-  login VARCHAR(15) NOT NULL UNIQUE,
-  senha VARCHAR(250) NOT NULL,
-  perfil VARCHAR(20) NOT NULL
-);
-
-INSERT INTO tbusuarios (iduser, usuario, login, senha, perfil)
-VALUES (1, 'Administrador', 'admin', MD5('admin'), 'admin');
-
-CREATE TABLE tbclientes (
-  idcli INT PRIMARY KEY AUTO_INCREMENT,
-  nomecli VARCHAR(50) NOT NULL,
-  endcli VARCHAR(100),
-  fonecli VARCHAR(15) NOT NULL,
-  emailcli VARCHAR(50) UNIQUE
-);
-
-CREATE TABLE tbos (
-  os INT PRIMARY KEY AUTO_INCREMENT,
-  data_os TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  tipo VARCHAR(15) NOT NULL,
-  situacao VARCHAR(20) NOT NULL,
-  equipamento VARCHAR(150) NOT NULL,
-  defeito VARCHAR(150),
-  servico VARCHAR(150),
-  tecnico VARCHAR(30),
-  valor DECIMAL(10,2),
-  idcli INT NOT NULL,
-  FOREIGN KEY (idcli) REFERENCES tbclientes(idcli)
-);
-```
+   - Aceder ao **phpMyAdmin** e crie a base de dados.
+   - Executar o script SQL.
 
 2. **Instalar o Aplicativo:**
    - Fazer o download da versão mais recente a partir da secção **Releases**.
